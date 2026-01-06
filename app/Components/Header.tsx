@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { ChevronDown, Search, Headphones, User, Menu, X } from "lucide-react";
+import { ChevronDown, Search, Headphones, User, Menu, X, Link } from "lucide-react";
 
 const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -103,7 +103,7 @@ const Header = () => {
 
             {/* Additional Actions */}
             <div className="space-y-4 mb-6">
-              <a
+              <Link
                 href="/postproperty"
                 className="w-full bg-white text-blue-700 font-semibold px-4 py-2.5 rounded-full text-sm border hover:bg-blue-50 transition flex items-center justify-center"
               >
@@ -111,15 +111,15 @@ const Header = () => {
                 <span className="text-[10px] text-green-600 ml-1 font-bold">
                   FREE
                 </span>
-              </a>
+              </Link>
 
-              <a
+              <Link
                 href="/contact"
                 className="flex items-center gap-2 text-gray-300 hover:text-white w-full text-left py-2"
               >
                 <Headphones className="w-5 h-5" />
                 <span>Support</span>
-              </a>
+              </Link>
             </div>
 
             {/* Login/Register Dropdown in Sidebar */}
@@ -142,30 +142,30 @@ const Header = () => {
               {isLoginDropdownOpen && (
                 <div className="mt-2 ml-4 space-y-3 text-gray-300">
                   <button className="block w-full text-left hover:text-white py-1">
-                    <a
+                    <Link
                       href="/login"
                       className="block w-full text-left text-white hover:bg-blue-600 hover:text-white rounded-md px-3 py-1 transition"
                     >
                       Login
-                    </a>
+                    </Link>
                   </button>
 
                   <button className="block w-full text-left hover:text-white py-1">
-                    <a
+                    <Link
                       href="/Register"
                       className="block w-full text-left text-white hover:bg-blue-600 hover:text-white rounded-md px-3 py-1 transition"
                     >
                       Register
-                    </a>
+                    </Link>
                   </button>
 
                   <button className="block w-full text-left hover:text-white py-1">
-                    <a
+                    <Link
                       href="/logout"
                       className="block w-full text-left text-black hover:bg-blue-600 hover:text-white rounded-md px-3 py-1 transition"
                     >
                       LogOut
-                    </a>
+                    </Link>
                   </button>
                 </div>
               )}
@@ -183,12 +183,12 @@ const Header = () => {
         {/* Left section */}
         <div className="flex items-center gap-4 md:gap-6">
           <h1 className="text-xl md:text-2xl font-extrabold">
-            <a
+            <Link
               href="/"
               className="text-blue-400 hover:text-blue-500 transition"
             >
               KDIPL
-            </a>
+            </Link>
           </h1>
 
           {/* All India Dropdown - Hidden on mobile */}
@@ -247,22 +247,22 @@ const Header = () => {
         {/* Right Side */}
         <div className="flex items-center gap-3 md:gap-4">
           <button className="hidden sm:flex bg-white text-blue-700 font-semibold px-3 md:px-4 py-1.5 rounded-full text-sm border hover:bg-blue-50 transition whitespace-nowrap">
-            <a href="/postproperty" className="flex items-center">
+            <Link href="/postproperty" className="flex items-center">
               Post property{" "}
               <span className="text-[10px] text-green-600 ml-1 font-bold">
                 FREE
               </span>
-            </a>
+            </Link>
           </button>
 
           {/* <Headphones className="w-5 h-5 text-gray-200 cursor-pointer hover:text-white hidden sm:block" /> */}
-          <a
+          <Link
             href="/contact"
             className="flex items-center gap-2 text-gray-300 hover:text-white w-full text-left py-2"
           >
             <Headphones className="w-5 h-5" />
             <span>Support</span>
-          </a>
+          </Link>
 
           <div className="relative profile-container hidden sm:block">
             <User
@@ -272,30 +272,30 @@ const Header = () => {
             {isProfileOpen && (
               <div className="absolute right-0 top-full mt-6 bg-white text-gray-800 shadow-lg rounded-md w-40 overflow-hidden z-50 border border-gray-200">
                 <button className="block w-full text-left hover:text-white py-1">
-                  <a
+                  <Link
                     href="/login"
                     className="block w-full text-left text-black hover:bg-blue-600 hover:text-white rounded-md px-3 py-1 transition"
                   >
                     Login
-                  </a>
+                  </Link>
                 </button>
 
                 <button className="block w-full text-left hover:text-white py-1">
-                  <a
+                  <Link
                     href="/Register"
                     className="block w-full text-left text-black hover:bg-blue-600 hover:text-white rounded-md px-3 py-1 transition"
                   >
                     Register
-                  </a>
+                  </Link>
                 </button>
 
                 <button className="block w-full text-left hover:text-white py-1">
-                  <a
+                  <Link
                     href="/logout"
                     className="block w-full text-left text-black hover:bg-blue-600 hover:text-white rounded-md px-3 py-1 transition"
                   >
                     Logout
-                  </a>
+                  </Link>
                 </button>
               </div>
             )}
@@ -398,44 +398,44 @@ const Header = () => {
                   </h3>
                   <ul className="space-y-2 text-gray-600">
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         COMMERCIAL
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         LAND/PLOT
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         POPULAR AREAS
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         INSIGHTS
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         ARTICLES & NEWS
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -445,52 +445,52 @@ const Header = () => {
                   </h3>
                   <ul className="space-y-2 text-gray-600">
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         FLATS
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         BUILDERS FLOORS
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         INDEPENDENT HOUSES
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         PLOTS IN NOIDA
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         SERVICED APARTMENTS
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         FARM HOUSES
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -500,36 +500,36 @@ const Header = () => {
                   </h3>
                   <ul className="space-y-2 text-gray-600">
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         PROPERTY IN NOIDA
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         VERIFIED PROPERTY IN NOIDA
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         NEW PROJECT IN NOIDA
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         FAQs
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -553,36 +553,36 @@ const Header = () => {
                   </h3>
                   <ul className="space-y-2 text-gray-600">
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         PG/CO LIVING
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         COMMERCIAL
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         LAND/PLOT
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         INSIGHTS
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -592,36 +592,36 @@ const Header = () => {
                   </h3>
                   <ul className="space-y-2 text-gray-600">
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Apartments
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Villas
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Plots
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Commercial
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -631,36 +631,36 @@ const Header = () => {
                   </h3>
                   <ul className="space-y-2 text-gray-600">
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Post Property
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Contact Agent
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Legal Advice
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         FAQs
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -684,36 +684,36 @@ const Header = () => {
                   </h3>
                   <ul className="space-y-2 text-gray-600">
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Mumbai
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Delhi
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Bangalore
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Pune
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -723,36 +723,36 @@ const Header = () => {
                   </h3>
                   <ul className="space-y-2 text-gray-600">
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Apartments
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Villas
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Plots
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Commercial
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -762,36 +762,36 @@ const Header = () => {
                   </h3>
                   <ul className="space-y-2 text-gray-600">
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Post Property
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Contact Agent
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Legal Advice
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         FAQs
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -815,36 +815,36 @@ const Header = () => {
                   </h3>
                   <ul className="space-y-2 text-gray-600">
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Mumbai
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Delhi
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Bangalore
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Pune
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -854,36 +854,36 @@ const Header = () => {
                   </h3>
                   <ul className="space-y-2 text-gray-600">
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Apartments
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Villas
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Plots
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Commercial
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -893,36 +893,36 @@ const Header = () => {
                   </h3>
                   <ul className="space-y-2 text-gray-600">
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Post Property
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Contact Agent
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Legal Advice
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         FAQs
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -946,36 +946,36 @@ const Header = () => {
                   </h3>
                   <ul className="space-y-2 text-gray-600">
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Mumbai
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Delhi
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Bangalore
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Pune
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -985,36 +985,36 @@ const Header = () => {
                   </h3>
                   <ul className="space-y-2 text-gray-600">
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Apartments
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Villas
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Plots
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Commercial
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -1024,36 +1024,36 @@ const Header = () => {
                   </h3>
                   <ul className="space-y-2 text-gray-600">
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Post Property
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Contact Agent
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         Legal Advice
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/Filter"
                         className="hover:text-blue-600 cursor-pointer block transition-colors"
                       >
                         FAQs
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
