@@ -1309,7 +1309,7 @@ export default function Home() {
                 </div>
                 <div className="p-4 sm:p-5">
                   <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">
-                    Buyer's Guide
+                    Buyer&apos;s Guide
                   </h3>
                   <p className="text-gray-600 text-sm sm:text-base mb-4">
                     Essential tips for home buyers
@@ -2442,7 +2442,7 @@ export default function Home() {
               href="/postproperty"
               className="bg-blue-600 hover:bg-blue-700 transition text-white font-semibold px-8 py-4 rounded-full shadow-md text-lg"
             >
-              Post Property It's Free
+              Post Property It&apos;s Free
             </a>
             <a href="/whatshap" className="text-slate-900 font-medium">
               Post via WhatsApp →

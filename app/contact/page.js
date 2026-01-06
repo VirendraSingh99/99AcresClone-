@@ -8,7 +8,7 @@ const page = () => {
         <div className="flex flex-col justify-between">
           <div className="space-y-4">
             <h2 className="text-4xl font-bold leading-tight lg:text-5xl text-gray-900 dark:text-white">
-              Let's talk!
+              Let&apos;s talk!
             </h2>
             <p className="text-gray-600 dark:text-gray-300 text-lg">
               Have a question or want to work together? Fill out the form and we’ll get back to you!

@@ -117,7 +117,7 @@ const PostPropertySection = () => {
             {/* Looking To */}
             <div>
               <label className="text-sm font-semibold text-gray-700 mb-2 block">
-                You're looking to …
+                You are looking to …
               </label>
               <div className="flex flex-wrap gap-2">
                 {["Sell", "Rent / Lease", "PG"].map((option, i) => (
@@ -135,7 +135,7 @@ const PostPropertySection = () => {
             {/* Property Type */}
             <div>
               <label className="text-sm font-semibold text-gray-700 mb-2 block">
-                And it's a …
+                And its a …
               </label>
               <div className="flex flex-wrap gap-2">
                 {[
