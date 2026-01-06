@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 import { Home, MapPin, Bed, DollarSign, X } from "lucide-react";
 
 const properties = [

@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 const page = () => {
   return (
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900 flex items-center justify-center py-16 px-4">

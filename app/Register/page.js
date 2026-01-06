@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
