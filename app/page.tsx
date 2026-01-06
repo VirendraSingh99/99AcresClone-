@@ -7,7 +7,7 @@ import {
   ArrowUpRight,
   Star,
 } from "lucide-react";
-import Link from "next/link";
+
 export default function Home() {
   const projectsRef = useRef(null); // Add this line
   const handpickedRef = useRef(null); // Add this line

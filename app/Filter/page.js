@@ -292,7 +292,7 @@ function RealEstateFilter() {
                 className="bg-white rounded overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
               >
                 <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
-                  <img
+                  <Image
                     src={prop.image}
                     alt={prop.title}
                     className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"

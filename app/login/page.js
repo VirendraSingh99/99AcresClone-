@@ -99,7 +99,7 @@ const LoginPage = () => {
           className="w-full lg:w-1/2 bg-indigo-500 flex items-center justify-center p-8"
           data-aos="fade-left"
         >
-          <img
+          <Image
             src="/banner.png" // change this image path if needed
             alt="Login Illustration"
             className="w-3/4 h-auto object-contain drop-shadow-lg"

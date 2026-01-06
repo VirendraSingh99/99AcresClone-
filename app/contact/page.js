@@ -14,7 +14,7 @@ const page = () => {
               Have a question or want to work together? Fill out the form and we’ll get back to you!
             </p>
           </div>
-          <img
+          <Image
             src="/doodle.svg"
             alt="Doodle"
             className="mt-6 p-6 h-52 md:h-64 object-contain"

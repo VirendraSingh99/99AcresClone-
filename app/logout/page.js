@@ -28,7 +28,7 @@ const LogoutPage = () => {
             Logout Confirmation
           </h1>
           <p className="text-gray-600 text-sm md:text-base">
-            Are you sure you want to log out of your account? You'll need to sign in again to access your dashboard.
+            Are you sure you want to log out of your account? You will need to sign in again to access your dashboard.
           </p>
         </div>
 

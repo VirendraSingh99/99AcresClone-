@@ -21,7 +21,7 @@ const RegisterPage = () => {
       >
         {/* Left - Image Section */}
         <div className="w-full lg:w-1/2 bg-indigo-500 flex items-center justify-center p-8">
-          <img
+          <Image
             src="/banner.png"
             alt="Register Illustration"
             className="w-3/4 h-auto object-contain drop-shadow-lg"
